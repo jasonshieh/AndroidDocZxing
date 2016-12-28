@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/res/merged/androidTest/debug/layout-land/share.xml",
+        "source": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/bundles/debug/res/layout-land/share.xml"
+    },
+    {
+        "merged": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/res/merged/androidTest/debug/layout-land/encode.xml",
+        "source": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/bundles/debug/res/layout-land/encode.xml"
+    }
+]

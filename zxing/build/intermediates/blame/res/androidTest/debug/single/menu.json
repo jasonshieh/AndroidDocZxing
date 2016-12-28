@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/res/merged/androidTest/debug/menu/encode.xml",
+        "source": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/bundles/debug/res/menu/encode.xml"
+    },
+    {
+        "merged": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/res/merged/androidTest/debug/menu/capture.xml",
+        "source": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/bundles/debug/res/menu/capture.xml"
+    },
+    {
+        "merged": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/res/merged/androidTest/debug/menu/history.xml",
+        "source": "/Users/xiexiaojian/Downloads/android/app/build/intermediates/bundles/debug/res/menu/history.xml"
+    }
+]
