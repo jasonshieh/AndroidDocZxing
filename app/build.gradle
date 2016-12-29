@@ -32,12 +32,13 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
 version = "1.0.0"
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
     resourcePrefix "_resourcePrefix_nothing_"
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -52,10 +53,15 @@ android {
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
 }
-def siteUrl = 'https://github.com/jasonshieh/JasonShiehFirst'      // 项目的主页
-def gitUrl = 'https://github.com/jasonshieh/JasonShiehFirst'   // Git仓库的url
-group = "cn.saymagic" // Maven Group ID for the artifact，一般填你唯一的包名
+def siteUrl = 'https://github.com/jasonshieh/AndroidDocZxing'      // 项目的主页
+def gitUrl = 'https://github.com/jasonshieh/AndroidDocZxing'   // Git仓库的url
+group = "com.androiddoc.zxing" // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -63,7 +69,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'Android Commonly used utils'  //项目描述
+                name 'com.androiddoc.zxing'  //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
@@ -74,9 +80,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'saymagic'       //填写开发者基本信息
-                        name 'saymagic'
-                        email 'cymmagic@gmail.com'
+                        id 'com.androiddoc.zxing'       //填写开发者基本信息
+                        name 'com.androiddoc.zxing'
+                        email 'jasonshieh.vip@gmail.com'
                     }
                 }
                 scm {
